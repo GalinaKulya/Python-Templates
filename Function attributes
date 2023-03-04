@@ -1,0 +1,19 @@
+def func(x):
+  int_var = x**2 + x + 1
+  if int_var % 2:
+    y = int_var**3
+  else: 
+    y = int_var**3 + 1
+    
+  #setting attributes here
+  func.optinal_return = int_var
+  func.is_awesome = 'Yes,my function is awesome.'
+  
+  return y
+
+y = func(3)
+print('Final answer is',y)
+
+#Accesing function attributes
+print('Show calculation-->', func.optinal_return)
+print('Is my function awesome?-->',func.is_awesome)
